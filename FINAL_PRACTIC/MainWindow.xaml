@@ -1,0 +1,36 @@
+﻿<Window x:Class="FINAL_PRACTIC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FINAL_PRACTIC"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="530" Width="800" ResizeMode="NoResize" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="160"/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Orientation="Vertical" Grid.Row="0" Background="#808080">
+            <TextBlock x:Name="Zagalovok" Grid.Row="0" FontSize="33" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="14" Foreground="White" FontFamily="Open Sans Semibold">MARATHON SKILLS 2024</TextBlock>
+            <TextBlock x:Name="PodZagolovok1" Grid.Row="0" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#B4B4B4" FontFamily="Open Sans Light">Москва, Россия</TextBlock>
+            <TextBlock x:Name="PodZagolovok2" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="305,0,293.6,0" FontFamily="Open Sans Light" Height="25"><Run Text="среда 29 ноября 2024" Foreground="#B4B4B4" /></TextBlock>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1">
+            <Button x:Name="Begun" Width="300" Height="60" Margin="12" FontSize="15" Click="Begun_Click">Я хочу стать бегуном</Button>
+            <Button x:Name="Sponsor" Width="300" Height="60" Margin="12" FontSize="15">Я хочу стать спонсором бегуна</Button>
+            <Button x:Name="Bolshe" Width="300" Height="60" Margin="12" FontSize="15">Хочу узнать больше о событии</Button>
+            <Button x:Name="Login" Grid.Row="2" Width="84" HorizontalAlignment="Right" Height="28" Margin="0,0,32.6,0" Content="Login" Click="Login_Click"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Height="30" Width="800" Background="#808080">
+            <TextBlock Grid.Row="3" Text="18 дней 8 часов и 17 минут до старта марафона!" Foreground="White" HorizontalAlignment="Center"></TextBlock>
+        </StackPanel>
+
+        <Frame Grid.RowSpan="2" x:Name="MyFrame1" NavigationUIVisibility="Hidden"></Frame>
+        
+    </Grid>
+</Window>
